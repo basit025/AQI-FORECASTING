@@ -8,4 +8,5 @@ shap
 streamlit
 plotly
 joblib
-tensorflow
+tensorflow==2.15.1
+
