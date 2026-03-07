@@ -56,7 +56,9 @@ def load_data():
     try:
         # Assuming the user saved the raw dataset or predictions locally
         # df = pd.read_csv('final_predictions_for_app.csv')
-        df = pd.read_csv('AQI_dataset.csv').copy()
+        
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+df = pd.read_csv(os.path.join(BASE_DIR, 'AQI_dataset.csv')).copy()
         
         # We simulate prediction results if the pure prediction CSV isn't found
         df['Date'] = pd.to_datetime(df['Date'])
@@ -171,3 +173,4 @@ else:
 
 st.markdown("---")
 st.caption("Developed using Streamlit, Plotly, and Machine Learning. The models presented here require the raw weight files downloaded from Google Colab to perform active inference.")
+
