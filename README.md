@@ -72,7 +72,7 @@ To make these powerful mathematical models accessible to a regular user, I devel
 **🔗 [View the Live Web Dashboard Here](https://aqi-forecasting.streamlit.app/)** 
 
 The dashboard automatically loads the `AQI_dataset.csv` and allows the user to:
-1. Select any of the 200+ cities from a dropdown to instantly filter the underlying analytics.
+1. Select any of the 26 cities from a dropdown to instantly filter the underlying analytics.
 2. View Dynamic KPIs (Current AQI, Tomorrow's Predicted AQI, and a plain-English Risk Status like "Hazardous" or "Moderate").
 3. Interact with a **Plotly Area-Chart**. This chart is completely dynamic; users can drag the timeline slider below the chart to zoom into specific 10-day periods, and hover their mouse over the lines to see exact chronological comparisons between the Ground-Truth Actuals and the XGBoost Predictions.
 
